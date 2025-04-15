@@ -1,0 +1,14 @@
+<section class="detail">
+    <div class="container">
+        <div *ngIf="hero">
+            <div class="detail_name">Name: {{ hero.name }}</div>
+            <div class="detail_name">ID: {{ hero.id }}</div>
+            <div class="detai_input">
+                <div class="detail_name">Name</div> 
+                <input type="text" placeholder={{hero.name}}>
+            </div>
+
+        </div>
+        <button class="btn" style="margin-top:10px" routerLink="/heroes-top">Back</button>
+    </div>
+</section> 

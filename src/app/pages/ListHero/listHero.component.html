@@ -1,0 +1,12 @@
+<section class="list_hero">
+    <div class="container">
+        <div class="list_title">
+            <h1>List Of Heroes</h1>
+        </div>
+        <div class="list_heroes" *ngFor="let hero of arrList">
+            <p [routerLink]="['/detail-heroes', hero.id]">
+                {{ hero.id }} <span>{{ hero.name }}</span>
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+<section class="top_hero">
+    <div class="container">
+        <div class="top_hero_title">
+            <h1>Top of Herores</h1>
+        </div>
+        <div class="top_hero_content" *ngFor="let hero of topHeroes">
+            <p [routerLink]="['/detail-heroes', hero.id]">{{ hero.id }} <span>{{ hero.name }}</span></p>
+        </div>
+    </div>
+</section>
