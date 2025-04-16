@@ -1,16 +1,5 @@
-<section class="header">
-    <div class="container">
-        <div class="header_title">
-            <h1>Tours of Herores</h1>
-        </div>
-        <div class="header_content d-flex mW-btn text-center">
-            <div class="header_btn_dashboard ">
-                <button class="btn" routerLink="heroes-top">Dashboard</button>
-            </div>
-            <div class="header_btn_herores">
-                <button class="btn" routerLink="heroes-list">Heroes</button>
-            </div>
-        </div>
-    </div>
-</section>
-<router-outlet></router-outlet>
+<main style="background-color: gray; padding: 10px;height: 100vh;">
+    <app-header></app-header>
+    <!-- Không được xóa thằng router outlet này -->
+    <router-outlet></router-outlet>
+</main>

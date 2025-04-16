@@ -1,11 +1,11 @@
-<section class="list_hero">
+<section class="list_hero" style="background-color: white; max-width: 300px;margin: 0 auto;padding: 10px 0;height: 80vh;">
     <div class="container">
         <div class="list_title">
-            <h1>List Of Heroes</h1>
+            <h1 style="margin: 0;">List Of Heroes</h1>
         </div>
         <div class="list_heroes" *ngFor="let hero of arrList">
-            <p [routerLink]="['/detail-heroes', hero.id]">
-                {{ hero.id }} <span>{{ hero.name }}</span>
+            <p [routerLink]="['/detail-heroes', hero.id]" style="border: 1px solid #000;max-width: 150px;margin: 10px auto; padding: 5px 0; cursor: pointer;">
+                <span style="color: red;">{{ hero.id }}</span> {{ hero.name }}
             </p>
         </div>
     </div>

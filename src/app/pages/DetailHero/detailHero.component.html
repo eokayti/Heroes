@@ -1,14 +1,13 @@
-<section class="detail">
+<section class="detail" style="background-color: white; max-width: 300px;margin: auto;padding: 10px 0; height: 80vh;">
     <div class="container">
         <div *ngIf="hero">
             <div class="detail_name">Name: {{ hero.name }}</div>
             <div class="detail_name">ID: {{ hero.id }}</div>
             <div class="detai_input">
-                <div class="detail_name">Name</div> 
-                <input type="text" placeholder={{hero.name}}>
+                <div class="detail_name">Name</div>
+                <input type="text" [(ngModel)]="hero.name">
             </div>
-
         </div>
         <button class="btn" style="margin-top:10px" routerLink="/heroes-top">Back</button>
     </div>
-</section> 
+</section>
